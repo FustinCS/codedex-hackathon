@@ -3,11 +3,28 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Menu</title>
+    <title>Menu | Sip & Play</title>
   </head>
   <body>
-    <div id="app"></div>
-    <script type="module" src="/main.js"></script>
-    
+    <div id="app">
+      <nav class="main-nav">
+        <img src="../assets/sipandplay.png" alt="Sip and Play Logo">
+        <div>
+            <button onclick="window.location.href='/'">Home</button>
+            <button onclick="window.location.href='/menu/'">Menu</button>
+            <button onclick="window.location.href='/calendar/'">Calendar</button>
+        </div>
+        <div class="social-media">
+          <a class="insta" href="https://www.instagram.com/sipnplaynyc/?hl=en" target="_blank" rel="noopener noreferrer">
+              <img src="../assets/insta.png" alt="instagram">
+          </a>
+            <a class="fb" href="https://www.facebook.com/sipnplaynyc/" target="_blank" rel="noopener noreferrer">
+                <img src="../assets/facebook.png" alt="facebook">
+            </a>
+        </div>
+    </nav>
+    </div>
+    <script type="module" src="./menu.js"></script>
+
   </body>
 </html>

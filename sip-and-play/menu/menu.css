@@ -1,0 +1,18 @@
+* {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+.main-nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.main-nav button {
+    min-width: 100px;
+    font-size: 24px;
+    border: none;
+    padding: 16px 32px;
+}
