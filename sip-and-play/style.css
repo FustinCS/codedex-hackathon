@@ -10,9 +10,33 @@
   justify-content: space-evenly;
 }
 
+
 .main-nav button {
   min-width: 100px;
   font-size: 24px;
   border: none;
   padding: 16px 32px;
+}
+
+.container {
+  border: 1px solid black;
+}
+.hours-list{
+  font-family: Arial, Helvetica, sans-serif;  
+}
+
+.hours-box{
+  border:1px solid black;
+  width: 30%;
+  border-radius: 10px;
+  padding: 20px;
+}
+
+#store-hours-container{
+  display: flex;
+  justify-content: flex-end;
+}
+
+ul {
+  list-style-type: none;
 }
