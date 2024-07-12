@@ -40,6 +40,9 @@ function createCoffee() {
         requestAnimationFrame(animate);
 
         orbit.update();
+        if (mesh) {
+            mesh.rotation.y += 0.05;
+        }
 
         renderer.render(scene, camera);
     }    
@@ -83,6 +86,9 @@ function createSpecialty() {
         requestAnimationFrame(animate);
 
         orbit.update();
+        if (mesh) {
+            mesh.rotation.y += 0.05;
+        }
 
         renderer.render(scene, camera);
     }
