@@ -1,82 +1,96 @@
 * {
-    padding: 0px;
-    margin: 0px;
-    box-sizing: border-box;
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
 }
 
 .main-nav {
-    display: flex;
-    align-items: center;
-    justify-content: space-evenly;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.main-nav .button-container {
+  display: flex;
+  gap: 16px;
 }
 
 .main-nav button {
-    min-width: 100px;
-    font-size: 24px;
-    border: none;
-    padding: 16px 32px;
-    margin: 0 16px;
-    cursor: pointer;
+  width: 200px;
+  font-size: 24px;
+  border: none;
+  padding: 16px 32px;
+  cursor: pointer;
 }
 
 .main-nav button:hover {
-    background-color: rgb( 222,233,211 );
-    transform: scale(1.1);
-    transition: 0.1s;
-    
+  background-color: rgb(222, 233, 211);
+  transform: scale(1.1);
+  transition: 0.1s;
 }
 
 .content-container {
-    margin: 0px 32px;
-    margin-bottom: 32px;
+  margin: 0px 32px;
+  margin-bottom: 32px;
 }
 
 .food-container {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 32px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 32px;
 }
 
 .food-item {
-    display: flex;
-    flex-direction: column;
-    border-style:double;
-    border-color:black;
-    border-width: 16px;
-    border-radius: 8px;
-    border-color: rgba(114, 77, 42, 0.733);
-    background-color: rgb( 222,233,211 );
-    padding: 32px;
-    margin: 16px 0px;
+  display: flex;
+  flex-direction: column;
+  border-style: double;
+  border-color: black;
+  border-width: 16px;
+  border-radius: 8px;
+  border-color: rgba(114, 77, 42, 0.733);
+  background-color: rgb(222, 233, 211);
+  padding: 32px;
+  margin: 16px 0px;
 }
 
 .food-item h1 {
-    font-size: 48px;
+  font-size: 48px;
 }
 
 .item-container {
-    display: flex;
+  display: flex;
 }
 
 .food-container div {
-    flex: 1;
-    text-align: center;
+  flex: 1;
+  text-align: center;
 }
 
 .food-container p {
-    font-size: 16px;
-    padding-bottom: 4px;
+  font-size: 16px;
+  padding-bottom: 4px;
 }
 
 .food-container h2 {
-    font-size: 24px;
-    padding: 8px;
+  font-size: 24px;
+  padding: 8px;
 }
 
 .canvas-container {
-    background-color: #F4E2C1;
-    border-color: white;
-    border-style: outset;
-    border-radius: 24px;
+  background-color: #f4e2c1;
+  border-color: white;
+  border-style: outset;
+  border-radius: 24px;
+}
+
+@media only screen and (max-device-width: 479px) {
+  .main-nav {
+    margin: 16px;
+  }
+
+  .main-nav .button-container {
+    flex-direction: column;
+  }
 }

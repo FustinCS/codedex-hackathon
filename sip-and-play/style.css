@@ -8,25 +8,26 @@
   display: flex;
   align-items: center;
   justify-content: space-evenly;
-  font-family: 'Helvetica', sans-serif;
-
+  font-family: "Helvetica", sans-serif;
 }
 
+.main-nav .button-container {
+  display: flex;
+  gap: 16px;
+}
 
 .main-nav button {
-  min-width: 100px;
+  width: 200px;
   font-size: 24px;
   border: none;
   padding: 16px 32px;
-  margin: 0 16px;
   cursor: pointer;
 }
 
 .main-nav button:hover {
-  background-color: rgb( 222,233,211 );
+  background-color: rgb(222, 233, 211);
   transform: scale(1.1);
   transition: 0.1s;
-  
 }
 
 .container {
@@ -38,32 +39,29 @@
   padding: 2em;
 }
 
-
-.hours-box{
+.hours-box {
   width: 200px;
   font-size: small;
   justify-content: space-between;
 }
 
-
 ul {
   list-style-type: none;
 }
 
-.title{
-  font-family: 'Helvetica', sans-serif;
-
+.title {
+  font-family: "Helvetica", sans-serif;
 }
 
-body{
-  font-family: 'Helvetica', sans-serif; 
+body {
+  font-family: "Helvetica", sans-serif;
 }
 
-.day{
+.day {
   text-align: left;
 }
 
-.hours{
+.hours {
   text-align: right;
 }
 
@@ -73,10 +71,10 @@ body{
 }
 
 .title strong {
-  font-weight: 600; 
+  font-weight: 600;
 }
 
-.info-container{
+.info-container {
   display: flex;
   flex-direction: row;
   gap: 100px;
@@ -87,19 +85,27 @@ body{
   margin-bottom: 2em;
 }
 
-#address-container{
+#address-container {
   order: 1;
-
 }
 
-#store-hours-container{
+#store-hours-container {
   order: 2;
 }
 
-.big-container{
+.big-container {
   display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: column;
+}
 
+@media only screen and (max-device-width: 479px) {
+  .main-nav {
+    margin: 16px;
+  }
+
+  .main-nav .button-container {
+    flex-direction: column;
+  }
 }

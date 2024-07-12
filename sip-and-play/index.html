@@ -1,112 +1,189 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="icon" href="../assets/favicon.ico">
+    <link rel="icon" href="../assets/favicon.ico" />
     <title>Sip & Play</title>
-    <link rel="stylesheet" href="style.css"/>
+    <link rel="stylesheet" href="style.css" />
   </head>
   <body>
     <div id="app"></div>
     <script type="module" src="/main.js"></script>
     <nav class="main-nav">
-      <img src="../assets/sipandplay.png" alt="Sip and Play Logo">
-      <div>
-          <button onclick="window.location.href='/'">Home</button>
-          <button onclick="window.location.href='/menu/'">Menu</button>
-          <button onclick="window.location.href='/calendar/'">Calendar</button>
+      <img src="../assets/sipandplay.png" alt="Sip and Play Logo" />
+      <div class="button-container">
+        <button onclick="window.location.href='/'">Home</button>
+        <button onclick="window.location.href='/menu/'">Menu</button>
+        <button onclick="window.location.href='/calendar/'">Calendar</button>
       </div>
       <div class="social-media">
-        <a class="insta" href="https://www.instagram.com/sipnplaynyc/?hl=en" target="_blank" rel="noopener noreferrer">
-            <img src="../assets/insta.png" alt="instagram">
+        <a
+          class="insta"
+          href="https://www.instagram.com/sipnplaynyc/?hl=en"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <img src="../assets/insta.png" alt="instagram" />
         </a>
-          <a class="fb" href="https://www.facebook.com/sipnplaynyc/" target="_blank" rel="noopener noreferrer">
-              <img src="../assets/facebook.png" alt="facebook">
-          </a>
+        <a
+          class="fb"
+          href="https://www.facebook.com/sipnplaynyc/"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <img src="../assets/facebook.png" alt="facebook" />
+        </a>
       </div>
-  </nav>
-  <!-- -->
-  <div class="big-container">
-  <div class="info-container">
-    <div id="store-hours-container">
-      <div class="hours-box">
-        <div class="title">
-          <h2><strong>Store Hours</strong></h2><br>
+    </nav>
+    <!-- -->
+    <div class="big-container">
+      <div class="info-container">
+        <div id="store-hours-container">
+          <div class="hours-box">
+            <div class="title">
+              <h2><strong>Store Hours</strong></h2>
+              <br />
+            </div>
+            <ul class="hours-list">
+              <li>
+                <span class="day">Mon</span>
+                <span class="hours">11:00 a.m. - 11:00 p.m.</span>
+              </li>
+              <li>
+                <span class="day">Tue</span>
+                <span class="hours">11:00 a.m. - 11:00 p.m.</span>
+              </li>
+              <li>
+                <span class="day">Wed</span>
+                <span class="hours">11:00 a.m. - 11:00 p.m.</span>
+              </li>
+              <li>
+                <span class="day">Thur</span>
+                <span class="hours">11:00 a.m. - 11:00 p.m.</span>
+              </li>
+              <li>
+                <span class="day">Fri</span>
+                <span class="hours">11:00 a.m. - 12:00 a.m.</span>
+              </li>
+              <li>
+                <span class="day">Sat</span>
+                <span class="hours">11:00 a.m. - 12:00 a.m.</span>
+              </li>
+              <li>
+                <span class="day">Sun</span>
+                <span class="hours">10:00 a.m. - 11:00 p.m.</span>
+              </li>
+            </ul>
+          </div>
         </div>
-          <ul class="hours-list">
-            <li><span class="day">Mon</span>   <span class="hours">11:00 a.m. - 11:00 p.m.</span></li>
-            <li><span class="day">Tue</span>   <span class="hours">11:00 a.m. - 11:00 p.m.</span></li>
-            <li><span class="day">Wed</span>   <span class="hours">11:00 a.m. - 11:00 p.m.</span></li>
-            <li><span class="day">Thur</span>  <span class="hours">11:00 a.m. - 11:00 p.m.</span></li>
-            <li><span class="day">Fri</span>   <span class="hours">11:00 a.m. - 12:00 a.m.</span></li>
-            <li><span class="day">Sat</span>   <span class="hours">11:00 a.m. - 12:00 a.m.</span></li>
-            <li><span class="day">Sun</span>   <span class="hours">10:00 a.m. - 11:00 p.m.</span></li>
-          </ul>
-      </div>
-    </div>
-    <div id="address-container">
-      <div class="title">
-        <h2><strong>Address</strong></h2><br>
-      </div>
-        <p>
-          471 5th Ave<br>
-          Brooklyn, NY 11215<br>
-          718-971-1684
-        </p>
-    </div>
-  </div>
-    <!--reservations-->
-    <div class="container">
-      <!-- reservations -> link -->
-      <div id="reservations-box">
-        <div class="title">
-          <h2><strong>Reservations</strong></h2><br>
-        </div>
-        <p>
-          For large parties (9+ or more people), please email us at <a href="mailto:sipnplaynyc@gmail.com">sipnplaynyc@gmail.com</a> to inquire about a reservation. 
-        </p>
-        <div>
-          <a href = 'https://www.exploretock.com/sipnplay' rel = "noopener" target="_blank"><button>MAKE A RESERVATION</button></a>
-        </div>
-      </div>
-    </div>
-
-
-    <div class="container">
-      <!-- simple guide-->
-      <div id="Guide">
-        <div class="title">
-          <h2><strong>How It Works</strong></h2><br>
-        </div>
+        <div id="address-container">
+          <div class="title">
+            <h2><strong>Address</strong></h2>
+            <br />
+          </div>
           <p>
-            Come on in with your friends and family and play boardgames from our collection of over 500+ games! Just $10 a person for 3 hours of gameplay. 
-            ($12 a person Friday-Sunday and Holidays) Play while enjoying bubble tea, coffee, beer sandwiches or salads and have a great time! If you want 
-            to guarantee a table, you can make a reservation which is $15 a person for 3 hours of gameplay. 
+            471 5th Ave<br />
+            Brooklyn, NY 11215<br />
+            718-971-1684
           </p>
+        </div>
+      </div>
+      <!--reservations-->
+      <div class="container">
+        <!-- reservations -> link -->
+        <div id="reservations-box">
+          <div class="title">
+            <h2><strong>Reservations</strong></h2>
+            <br />
+          </div>
+          <p>
+            For large parties (9+ or more people), please email us at
+            <a href="mailto:sipnplaynyc@gmail.com">sipnplaynyc@gmail.com</a> to
+            inquire about a reservation.
+          </p>
+          <div>
+            <a
+              href="https://www.exploretock.com/sipnplay"
+              rel="noopener"
+              target="_blank"
+              ><button>MAKE A RESERVATION</button></a
+            >
+          </div>
+        </div>
+      </div>
+
+      <div class="container">
+        <!-- simple guide-->
+        <div id="Guide">
+          <div class="title">
+            <h2><strong>How It Works</strong></h2>
+            <br />
+          </div>
+          <p>
+            Come on in with your friends and family and play boardgames from our
+            collection of over 500+ games! Just $10 a person for 3 hours of
+            gameplay. ($12 a person Friday-Sunday and Holidays) Play while
+            enjoying bubble tea, coffee, beer sandwiches or salads and have a
+            great time! If you want to guarantee a table, you can make a
+            reservation which is $15 a person for 3 hours of gameplay.
+          </p>
+        </div>
+      </div>
+      <div class="container">
+        <!-- Upcoming events -> link to calendar -->
+        <div id="events-box">
+          <div class="title">
+            <h2>Pre-Releases</h2>
+          </div>
+          <div>
+            <img src="../assets/bloomburrow.jpg" alt="Bloomburrow" />
+          </div>
+          <p>
+            Bloomburrow Pre-release is coming soon! Continuing with Monday
+            nights as everyone really enjoyed the extra day if the weekend ended
+            up being busy. Enjoy the cutest set of the year!
+          </p>
+          <ul id="upcoming-events">
+            <li>
+              7/26 Bloomburrow Pre-release 6:00 p.m.
+              <a
+                href="https://square.link/u/vYewrAQG"
+                rel="noopener"
+                target="_blank"
+                ><button>Purchase</button></a
+              >
+            </li>
+            <li>
+              7/27 Bloomburrow Pre-release 11:00 a.m.
+              <a
+                href="https://square.link/u/v0AzfRyj"
+                rel="noopener"
+                target="_blank"
+                ><button>Purchase</button></a
+              >
+            </li>
+            <li>
+              7/27 Bloomburrow Pre-release 5:00 p.m.
+              <a
+                href="https://square.link/u/pIcxnxZO"
+                rel="noopener"
+                target="_blank"
+                ><button>Purchase</button></a
+              >
+            </li>
+            <li>
+              7/29 Bloomburrow Pre-release 6:00 p.m.
+              <a
+                href="https://square.link/u/yXIMpJzp"
+                rel="noopener"
+                target="_blank"
+                ><button>Purchase</button></a
+              >
+            </li>
+          </ul>
+        </div>
       </div>
     </div>
-    <div class="container">
-      <!-- Upcoming events -> link to calendar -->
-      <div id="events-box">
-        <div class="title">
-          <h2>Pre-Releases</h2>
-        </div>
-        <div>
-          <img src="../assets/bloomburrow.jpg" alt="Bloomburrow">
-        </div>
-        <p>
-          Bloomburrow Pre-release is coming soon! Continuing with Monday nights as everyone really enjoyed the extra day if the weekend ended up being busy.
-           Enjoy the cutest set of the year!
-        </p>
-        <ul id="upcoming-events">
-          <li>7/26 Bloomburrow Pre-release 6:00 p.m. <a href="https://square.link/u/vYewrAQG" rel="noopener" target="_blank"><button>Purchase</button></a></li>
-          <li>7/27 Bloomburrow Pre-release 11:00 a.m. <a href="https://square.link/u/v0AzfRyj" rel="noopener" target="_blank"><button>Purchase</button></a></li>
-          <li>7/27 Bloomburrow Pre-release 5:00 p.m. <a href="https://square.link/u/pIcxnxZO" rel="noopener" target="_blank"><button>Purchase</button></a></li>
-          <li>7/29 Bloomburrow Pre-release 6:00 p.m. <a href="https://square.link/u/yXIMpJzp" rel="noopener" target="_blank"><button>Purchase</button></a></li>
-        </ul>
-      </div>
-    </div>
-  </div>
   </body>
 </html>
