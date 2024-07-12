@@ -16,3 +16,41 @@
     border: none;
     padding: 16px 32px;
 }
+
+.content-container {
+    margin: 0px 32px;
+}
+
+.food-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 32px;
+}
+
+.food-item {
+    display: flex;
+    flex-direction: column;
+    border-style:double;
+    border-color:black;
+    border-width: 16px;
+    border-radius: 8px;
+    border-color: rgba(114, 77, 42, 0.733);
+    background-color: rgb( 222,233,211 );
+}
+
+.item-container {
+    display: flex;
+}
+
+.food-container div {
+    flex: 1;
+    text-align: center;
+}
+
+.canvas-container {
+    background-color: #F4E2C1;
+    border-color: white;
+    border-style: outset;
+    border-radius: 24px;
+}
