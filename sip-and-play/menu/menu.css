@@ -38,6 +38,7 @@
     border-color: rgba(114, 77, 42, 0.733);
     background-color: rgb( 222,233,211 );
     padding: 32px;
+    margin: 16px 0px;
 }
 
 .food-item h1 {
